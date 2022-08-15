@@ -6,7 +6,8 @@ Question Extraction Tool
 PDF2Exam: Đây đơn giản là 1 tool để convert đề pdf thành dạng ảnh (base64image)
 Toàn bộ code được tôi sử dụng ở đây đều thuộc về github này: https://github.com/edmicro-tech/PDF2Exam (xin cảm ơn tác giả rất nhiều) </br>
 Vậy vì sao có PDF2ExamApi?</br>
-Vì tôi là 1 dev .net nên rất khó để áp dụng được tool của tác giả vào phần mềm của mình, vì vậy tôi học cách viết python (trong khoảng 2h) và trả về dưới dạng api để có thể đáp ứng được yêu cầu của mình.
+Vì tôi là 1 dev .net nên rất khó để áp dụng được tool của tác giả vào phần mềm của mình, vì vậy tôi học cách viết python (trong khoảng 2h) 
+và trả về dưới dạng api để có thể đáp ứng được yêu cầu của mình.</br>
 (*) Lưu ý: Phần code này có thể có rất nhiều bug do tôi mới học ngôn ngữ python đc vài giờ, và chỉ để đáp ứng đc yêu cầu công việc của tôi!
 
 ##  Setup
@@ -26,11 +27,6 @@ pip3 install -r requirements.txt
 
 
 ##  How to run 
-See the video on how to run the code.
-
-![Demo Video](/images/videos/demo-video.gif)
-
-
 Run the command below.
 ```sh
 uvicorn main:app --reload
@@ -38,11 +34,11 @@ uvicorn main:app --reload
 
 Go to "http://127.0.0.1:8000/docs". Click "Try it out" choosen file and then hit "Submit." PDF2ExamApi will make a copy of your file in the folder uploads. 
 
-![Upload image](/images/upload-image.png)
+![Upload image](/images/images01.png)
 
 After the file finishes processing, they will return to json data.
 
-![Display image](/images/display.png)
+![Display image](/images/images02.png)
 
 
 ###  Json data return
